@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingHorizontal="@dimen/_11ssp"
+    android:background="@drawable/dialog_bottom_sheet_bg"
+    android:paddingBottom="@dimen/_30sdp"
+
+    tools:context=".view.fragments.AddTransitionFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layoutIncmExpns"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/icomeBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Income"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/_12sdp"
+                    android:layout_marginRight="@dimen/_7sdp"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:background="@drawable/rounded_incm_exps"
+                    />
+                <TextView
+                    android:id="@+id/expenseBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Expense"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:gravity="center"
+                    android:padding="@dimen/_12sdp"
+                    android:background="@drawable/rounded_incm_exps"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                >
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/selectDateInputLayout"
+                    android:layout_width="match_parent"
+                    style="@style/OutlinedBoxWithBorderColor"
+                    android:layout_height="wrap_content"
+                    app:boxStrokeColor="@color/gray_400"
+                    app:hintTextColor="@color/gray_400"
+                    android:hint="Select date"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/selectDateInputEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="0dp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:focusable="false"
+                        android:inputType="text" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/amountInputLayout"
+                    android:layout_width="match_parent"
+                    style="@style/OutlinedBoxWithBorderColor"
+                    android:layout_height="wrap_content"
+                    app:boxStrokeColor="@color/gray_400"
+                    app:hintTextColor="@color/gray_400"
+                    android:hint="Amount"
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/amountInputEditText"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:layout_margin="0dp"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/categoryInputLayout"
+                    android:layout_width="match_parent"
+                    style="@style/OutlinedBoxWithBorderColor"
+                    android:layout_height="wrap_content"
+                    app:boxStrokeColor="@color/gray_400"
+                    app:hintTextColor="@color/gray_400"
+                    android:hint="Category"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/categoryInputEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="0dp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:focusable="false"
+                        android:inputType="text" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/accountInputLayout"
+                    android:layout_width="match_parent"
+                    style="@style/OutlinedBoxWithBorderColor"
+                    android:layout_height="wrap_content"
+                    app:boxStrokeColor="@color/gray_400"
+                    app:hintTextColor="@color/gray_400"
+                    android:hint="Account"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/accountInputEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="0dp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="true"
+                        android:inputType="text" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/noteInputLayout"
+                    android:layout_width="match_parent"
+                    style="@style/OutlinedBoxWithBorderColor"
+                    android:layout_height="wrap_content"
+                    app:boxStrokeColor="@color/gray_400"
+                    app:hintTextColor="@color/gray_400"
+                    android:hint="Note"
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/noteInputEditText"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="0dp"
+                        android:inputType="text"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/addTransitionBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blue_400"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:text="Add Transition"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+</FrameLayout>
